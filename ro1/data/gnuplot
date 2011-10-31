@@ -1,0 +1,5 @@
+set ylabel "Skutecznosc [%]"
+set xlabel "k"
+set term pdfcairo
+set output "out.pdf"
+plot "projection_50_gnuplot.dat" using 1:2 ti "Projection", "zones_50_gnuplot.dat" using 1:2 ti "Zones", "crossing_50_gnuplot.dat" using 1:2 ti "Crossing", "lrp_50_gnuplot.dat" using 1:2 ti "LeftRightProfile"

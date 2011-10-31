@@ -1,0 +1,1 @@
+grep correct Crossing_t127_wenus_sse.log | sed 's/correct: //g' | sed 's/%//g' | tac | nl > crossing_50_gnuplot.dat
